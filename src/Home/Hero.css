@@ -1,0 +1,14 @@
+.hero-heading{
+    font-family: 'Nexa Bold';
+}
+
+.hero-subheading{
+    font-family: 'Urbanist Light';
+}
+
+.btn {
+    font-family: 'Urbanist Light';
+    color:black;
+    background-color: #E8FFCB;
+    font-weight: 700;
+}
