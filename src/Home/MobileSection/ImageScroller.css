@@ -1,0 +1,39 @@
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.image {
+    z-index: 1;
+    position: absolute;
+    margin-top: -30px;
+    height: 600px;
+    transition: opacity 0.5s ease;
+    left: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.text {
+    width: 100%; /* Adjust based on your layout needs */
+    height: 50vh;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    padding: 20px;
+    
+}
+
+.slide {
+    height: 50vh; /* Each slide fills the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    width: 50%;
+    margin-left: auto;
+    
+}
