@@ -6,7 +6,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="container hero">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center herocontainer min-h-screen">
         <div className="ml-20 hero-text w-1/2 text-left p-5">
           <h1 className="hero-heading text-8xl font-bold leading-none">   
             Your <span className="text-emerald-300">Guide</span> to Serenity in
@@ -32,8 +32,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className="hero-image justify-end flex"
-          style={{ marginRight: "-10%" }}
+          className="hero-image justify-end flex ml-20"
         >
           <img src={HeroImage} alt="hero" />
         </div>

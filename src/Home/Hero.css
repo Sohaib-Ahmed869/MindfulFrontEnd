@@ -12,3 +12,28 @@
     background-color: #E8FFCB;
     font-weight: 700;
 }
+
+@media screen and (max-width: 768px){
+    .hero-heading{
+        font-size: 2rem;
+    }
+
+    .hero-subheading{
+        font-size: 1.5rem;
+    }
+
+    .herocontainer{
+        padding: 0 0px;
+        flex-direction: column;
+    }
+
+    .hero-text{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .hero-image {
+        margin-left: 0px;
+    }
+    
+}
