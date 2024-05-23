@@ -9,8 +9,8 @@ const Hero = () => {
       <div className="flex justify-between items-center herocontainer min-h-screen">
         <div className="ml-20 hero-text w-1/2 text-left p-5">
           <h1 className="hero-heading text-8xl font-bold leading-none">   
-            Your <span className="text-emerald-300">Guide</span> to Serenity in
-            the <span className="text-emerald-300">Digital Age</span>
+            Your <span style={{color:'#A7C18E'}}>Guide</span> to Serenity in
+            the <span style={{color:'#A7C18E'}}>Digital Age</span>
           </h1>
           <p className="text-2xl hero-subheading mt-10">
             Redefining mental wellness: your partner in the fight against

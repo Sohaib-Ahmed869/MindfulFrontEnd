@@ -7,6 +7,26 @@
   pointer-events: none;
 }
 
+.laptopsection{
+
+}
+
+.mobilesection{
+  display: hidden;
+  border: 1px solid black;
+}
+
+
+@media screen and (max-width: 768px){
+  .laptopsection{
+    display: hidden;
+  }
+  .mobilesection{
+    display: block;
+  }
+  
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +56,4 @@
     transform: rotate(360deg);
   }
 }
+

@@ -1,3 +1,7 @@
+.containermain2{
+    display: none;
+}
+
 .container1 {
     display: flex;
     align-items: center;
@@ -5,17 +9,17 @@
     height: 80vh;
     overflow: hidden;
     position: relative;
+    
 }
 
 .image {
-    z-index: 1;
     position: absolute;
     margin-top: -30px;
     height: 600px;
     transition: opacity 0.5s ease;
     left: 10%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px; */
 }
 
 .text {
@@ -24,6 +28,7 @@
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     padding: 20px;
+    background-color: #F5FCE7;
     
 }
 
@@ -35,15 +40,28 @@
     scroll-snap-align: start;
     width: 50%;
     margin-left: auto;
+    z-index: 99;
     
+}
+
+.Display {
+    height: 450px;
 }
 
 
 @media screen and (max-width: 768px){
+
+    .containermain{
+        display: none;
+    }
+    .containermain2{
+        display: block;
+    }
     .container1 {
         display: flex;
         align-items: center;
         flex-direction: column;
+        height: 100vh;
     }
     .image {
         visibility: hidden;

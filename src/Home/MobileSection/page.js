@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import ChatBotImage from "../../Assets/Chatbot.png";
-import OtherImage from "../../Assets/Iphone.png";
+import ChatBotImage from "../../Assets/Chatbot2.png";
+import OtherImage from "../../Assets/Progress.png";
+import LessonImage from "../../Assets/Lesson.png";
 import "./ImageScroller.css"; // Assume some basic styling for .container, .image, .text, and .slide
 const data = [
   {
@@ -51,10 +52,10 @@ const ImageScroller = () => {
   }, []);
 
   return (
-    <div className="p-0">
+    <div className="p-0 containermain">
       <div className="container1">
         <img src={activeImage} className="image" alt="Display" />
-        <div className="text" style={{ backgroundColor: "#F5FCE7" }}>
+        <div className="text" style={{}}>
           <div
             ref={(el) => (slidesRef.current[0] = el)}
             data-image={ChatBotImage}
@@ -72,7 +73,7 @@ const ImageScroller = () => {
           </div>
           <div
             ref={(el) => (slidesRef.current[1] = el)}
-            data-image={OtherImage}
+            data-image={LessonImage}
             className="slide"
           >
             <div className="text-left">
