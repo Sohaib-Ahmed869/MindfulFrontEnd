@@ -52,7 +52,7 @@ const ImageScroller = () => {
     setImageKey((prevKey) => prevKey + 1); // Increment key to trigger re-render
   };
   return (
-    <div className="container1">
+    <div className="containermain">
       <img src={activeImage} alt="Display" className="image fade-in" key={imageKey} />
       <Swiper
         {...settings}

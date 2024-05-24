@@ -40,7 +40,7 @@ const ImageScroller2 = () => {
     <div className="containermain2">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
-        spaceBetween={50}
+        spaceBetween={0}
         slidesPerView={1}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
