@@ -52,15 +52,15 @@ const ImageScroller = () => {
     setImageKey((prevKey) => prevKey + 1); // Increment key to trigger re-render
   };
   return (
-    <div className="containermain">
+    <div className="containermain mb-60">
       <img src={activeImage} alt="Display" className="image fade-in" key={imageKey} />
       <Swiper
         {...settings}
         onSlideChange={changeImage}
-        className="flex justify-end w-full text-left"
+        className=" swuper flex justify-end text-left h-full"
       >
         {data.map((item, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="flex w-full h-96">
             <div className="text text-left" key={imageKey}>
               <div className="flex flex-col subtext2">
                 <h3 className="text-4xl font-bold py-3">{item.title}</h3>

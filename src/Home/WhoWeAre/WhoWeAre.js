@@ -3,43 +3,42 @@ import "./WhoWeAre.css";
 
 import WhoWeAreImage from "../../Assets/whoweAre.png";
 import CardDecorImage from "../../Assets/cardDecor.png";
+import img1 from "../../Assets/img1.png";
+import img2 from "../../Assets/img2.png";
+import img3 from "../../Assets/img3.png";
+import img4 from "../../Assets/img4.png";
 
 const data = [
   {
+    image: img1,
     title: "Proven Practices for Transformative Mindfulness Experiences",
-    content:
-      "We designed MetaMindful to help you stay mindful effortlessly. It's all about making mindfulness accessible and enjoyable for everyone.",
   },
   {
+    image: img2,
     title: "Our Mindfulness Coach Adapts to Your Progress",
-    content:
-      "We're here to refine your mindfulness practice, customizing it to your evolving needs and progress.",
   },
   {
+    image: img3,
     title: "Partnering for Lasting Mindfulness Success",
-    content:
-      "Let's support your mindfulness journey by fostering accountability and cultivating the right mindset for lasting growth.",
   },
   {
+    image: img4,
     title: "Supporting Your Journey to Present, Mindful Living",
-    content:
-      "We get how crucial it is to stay in the moment and focus on what really counts. That's why we're here to give you the tools and guidance you need to keep your attention where it counts.",
   },
 ];
 
 const WhoWeAre = () => {
   return (
-    <div className="container flex justify-center mb-20 mt-20 w-full herocontainer">
-      <div className="w-1/3 items-center flex mx-auto ml-36 whoweare">
-        <img src={WhoWeAreImage} alt="Who We Are" className="h-96" />
+    <div className="container flex flex-col justify-center mx-auto mb-20 mt-20 w-full herocontainer">
+      <div className="items-center flex mx-auto ml-10 whoweare h-96">
+        <img src={WhoWeAreImage} alt="Who We Are" className="h-28" />
       </div>
-      <div className="w-2/3 card">
-        <div className="flex flex-col p-10">
+      <div className="w-full cardcontainer">
+        <div className="flex flex-row p-10 cardcontainer2">
           {data.map((item, index) => (
-            <div className="flex mt-4 bg-white rounded-3xl px-4 py-8 shadow-xl">
-              <div className="ml-4">
+            <div className="flex flex-col bg-white rounded-3xl shadow-xl card p-10 m-10 w-1/4">
+                <img src={item.image} alt="Card Decor" className="h-24 w-24 " />
                 <h2 className="text-xl font-bold">{item.title}</h2>
-              </div>
             </div>
           ))}
         </div>

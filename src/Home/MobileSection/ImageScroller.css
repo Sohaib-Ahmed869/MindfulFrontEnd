@@ -15,9 +15,8 @@
 .image {
     z-index: 2;
     position: absolute;
-    margin-top: -30px;
+    margin-top: -80px;
     height: 600px;
-
     left: 10%;
     pointer-events: none;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -89,6 +88,12 @@
     }
 }
 
+@media screen and (min-width: 2200px){
+    .containermain{
+        width: 2300px;
+    }
+}
+
 
 .fade-in {
     animation: fadeIn 1s;
@@ -98,4 +103,3 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
-

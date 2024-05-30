@@ -4,6 +4,14 @@ import AppStore from "../Assets/appstore.png";
 import { BiPlay } from "react-icons/bi";
 import "./Hero.css";
 const Hero = () => {
+  const [email, setEmail] = React.useState('');
+
+  const handleBookDemo = () => {
+    // Save email to local storage
+    localStorage.setItem('email', email);
+    alert('Demo booked successfully!'); 
+    setEmail(''); // Clear input after saving
+  };
   return (
     <div className="container hero">
       <div className="flex justify-between items-center herocontainer min-h-screen">
@@ -21,8 +29,10 @@ const Hero = () => {
               type="text"
               placeholder="abc@gmail.com"
               className="input p-2 w-2/3 border border-gray-300 rounded-xl"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <button className="btn py-3 px-4 rounded-xl text-white flex items-center">
+            <button className="btn py-3 px-4 rounded-xl text-white flex items-center" onClick={handleBookDemo}>
               <p className="pr-2">Book a demo</p> <BiPlay className="ml-1 text-2xl" />
             </button>
           </div>
