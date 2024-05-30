@@ -4,7 +4,7 @@ import { Mousewheel, Pagination, EffectFade } from "swiper/modules";
 import SwiperCore from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import ChatBotImage from "../../Assets/Chatbot2.png";
+import ChatBotImage from "../../Assets/Chatbotnew.png";
 import OtherImage from "../../Assets/Progress.png";
 import LessonImage from "../../Assets/Lesson.png";
 import "./ImageScroller.css";

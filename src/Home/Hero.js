@@ -13,8 +13,8 @@ const Hero = () => {
     setEmail(''); // Clear input after saving
   };
   return (
-    <div className="container hero">
-      <div className="flex justify-between items-center herocontainer min-h-screen">
+    <div className="container hero w-full">
+      <div className="flex items-center herocontainer min-h-screen w-full">
         <div className="ml-20 hero-text w-1/2 text-left p-5">
           <h1 className="hero-heading text-8xl font-bold leading-none">   
             Your <span style={{color:'#A7C18E'}}>Guide</span> to Serenity in
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className="hero-image justify-end flex ml-20"
+          className="hero-image flex ml-20"
         >
           <img src={HeroImage} alt="hero" />
         </div>
