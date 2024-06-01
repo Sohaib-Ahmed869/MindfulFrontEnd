@@ -30,7 +30,7 @@ const data = [
 const WhoWeAre = () => {
   return (
     <div className="container flex flex-col justify-center mx-auto mb-20 mt-20 w-full herocontainer">
-      <div className="items-center flex mx-auto ml-10 whoweare h-96">
+      <div className="items-center flex mx-auto ml-10 whoweare">
         <img src={WhoWeAreImage} alt="Who We Are" className="h-28" />
       </div>
       <div className="w-full cardcontainer">
