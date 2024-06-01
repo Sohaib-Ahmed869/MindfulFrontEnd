@@ -7,10 +7,22 @@ const Hero = () => {
   const [email, setEmail] = React.useState('');
 
   const handleBookDemo = () => {
+    //do the email validation
+    if (!email) {
+      alert('Please enter an email address!'); 
+      return;
+    }
+    if (!email.includes('@') || !email.includes('.')) {
+      alert('Please enter a valid email address!'); 
+      return;
+    }
+
     // Save email to local storage
     localStorage.setItem('email', email);
     alert('Demo booked successfully!'); 
     setEmail(''); // Clear input after saving
+    //in new tab open the link to google form
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSf8pyT8RWYrovK_KGruN7VWtFQpabFkEhVLtlj5BI91aQEAKg/viewform', '_blank');
   };
   return (
     <div className="container hero w-full">
