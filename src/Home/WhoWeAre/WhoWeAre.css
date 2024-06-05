@@ -76,3 +76,11 @@
     }
 
 }
+
+@media screen and (min-width: 2300px){
+    .card h2{
+        font-size: 2rem;
+        line-height: 1.5;
+
+    }
+}

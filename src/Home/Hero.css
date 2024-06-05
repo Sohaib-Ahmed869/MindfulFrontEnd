@@ -4,7 +4,7 @@
 
 .hero-subheading{
     font-family: 'Urbanist Light';
-}
+} 
 
 .btn {
     font-family: 'Urbanist Light';
@@ -36,4 +36,11 @@
         margin-left: 0px;
     }
     
+}
+
+@media screen and (min-width: 2300px){
+    .hero-subheading{
+        font-size: 3rem;
+        line-height: 1.5;
+    }
 }
