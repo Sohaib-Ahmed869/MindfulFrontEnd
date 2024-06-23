@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px){ 
+    .arrow{
+        display: none;
+    }
+
+    .cont {
+        padding: 0px;
+    }
+
+    .mob {
+        margin-bottom: 100px;
+    }
+}

@@ -1,0 +1,20 @@
+.hero-heading2{
+    font-family: 'Nexa Bold';
+}
+
+.hero-subheading2{
+    font-family: 'Urbanist Light';
+} 
+
+
+
+@media screen and (max-width: 768px){
+    .hero-heading2{
+        font-size: 2rem;
+    }
+
+    .hero-subheading2{
+        font-size: 1rem;
+        padding: 20px;
+    }
+}

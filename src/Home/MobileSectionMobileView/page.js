@@ -37,7 +37,7 @@ const data = [
 
 const ImageScroller2 = () => {
   return (
-    <div className="containermain2">
+    <div className="">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
         spaceBetween={0}
@@ -48,7 +48,7 @@ const ImageScroller2 = () => {
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
-            <div  className="items-center flex flex-col justify-center h-screen mx-auto">
+            <div  className="items-center flex flex-col justify-center h-screen mx-auto mt-0 pt-0">
               <img
                 src={item.image}
                 alt="Display"

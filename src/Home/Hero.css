@@ -26,6 +26,13 @@
         padding: 0 0px;
         flex-direction: column;
     }
+    .hero {
+        padding: 0 0px;
+        margin-bottom: 100px;
+    }
+    .arrow{
+        display: none;
+    }
 
     .hero-text{
         width: 100%;

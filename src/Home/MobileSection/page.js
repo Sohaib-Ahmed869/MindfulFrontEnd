@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import ChatBotImage from "../../Assets/Chatbot.png";
 import OtherImage from "../../Assets/Progress.png";
 import LessonImage from "../../Assets/Lesson.png";
+import mobiles from "../../Assets/mobiles.png";
 import "./ImageScroller.css";
 
 // Install necessary Swiper modules
@@ -52,26 +53,29 @@ const ImageScroller = () => {
     setImageKey((prevKey) => prevKey + 1); // Increment key to trigger re-render
   };
   return (
-    <div className="containermain mb-60">
-      <img src={activeImage} alt="Display" className="image fade-in" key={imageKey} />
-      <Swiper
-        {...settings}
-        onSlideChange={changeImage}
-        className=" swuper flex justify-end text-left h-full"
-      >
-        {data.map((item, index) => (
-          <SwiperSlide key={index} className="flex w-full h-96">
-            <div className="text text-left" key={imageKey}>
-              <div className="flex flex-col subtext2">
-                <h3 className="text-4xl font-bold py-3">{item.title}</h3>
-                <p className="text-2xl leading-10 mt-10 font-normal ">
-                  {item.content}
-                </p>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    // <div className="containermain mb-60">
+    //   <img src={activeImage} alt="Display" className="image fade-in" key={imageKey} />
+    //   <Swiper
+    //     {...settings}
+    //     onSlideChange={changeImage}
+    //     className=" swuper flex justify-end text-left h-full"
+    //   >
+    //     {data.map((item, index) => (
+    //       <SwiperSlide key={index} className="flex w-full h-96">
+    //         <div className="text text-left" key={imageKey}>
+    //           <div className="flex flex-col subtext2">
+    //             <h3 className="text-4xl font-bold py-3">{item.title}</h3>
+    //             <p className="text-2xl leading-10 mt-10 font-normal ">
+    //               {item.content}
+    //             </p>
+    //           </div>
+    //         </div>
+    //       </SwiperSlide>
+    //     ))}
+    //   </Swiper>
+    // </div>
+    <div className="p-52 pt-0 pb-10 mt-36">
+      <img src={mobiles} alt="mobiles" className="w-full" />
     </div>
   );
 };

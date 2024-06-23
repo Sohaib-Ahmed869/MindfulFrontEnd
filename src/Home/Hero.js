@@ -1,7 +1,8 @@
 import React from "react";
-import HeroImage from "../Assets/Hero.png";
+import HeroImage from "../Assets/heropic.png";
 import AppStore from "../Assets/appstore.png";
 import { BiPlay } from "react-icons/bi";
+import arrow1 from "../Assets/arrow1.png";
 import "./Hero.css";
 const Hero = () => {
   const [email, setEmail] = React.useState("");
@@ -28,18 +29,20 @@ const Hero = () => {
     );
   };
   return (
-    <div className="hero w-full p-10 pt-0">
-      <div className="flex justify-between items-center herocontainer min-h-screen">
-        <div className="hero-text w-1/2 text-left p-5">
-          <h1 className="hero-heading text-8xl font-bold leading-none">
-            Your <span style={{ color: "#A7C18E" }}>Guide</span> to Serenity in
-            the <span style={{ color: "#A7C18E" }}>Digital Age</span>
+    <div className="hero w-full p-20 pt-0">
+      <div className="flex justify-between items-center herocontainer">
+        <div className="hero-text w-1/2 text-left p-5 pt-0">
+          <h1 className="hero-heading text-6xl font-bold leading-none">
+             <span style={{ color: "#A7C18E" }}> Hey there !</span> 
+           {" "}
+               Are you struggling with mindfulness?
+            
           </h1>
+          <img src={arrow1} alt="arrow" className="absolute mt-36 arrow" style={{left:"40%"}}/>
           <p className="text-2xl hero-subheading mt-10">
-            Redefining mental wellness: your partner in the fight against
-            anxiety and depression
+          You understand the power of mindfulness, but constantly struggling to understand and incorporate it into your life with traditional approaches.
           </p>
-          <div className="justify-between mt-10 flex">
+          {/* <div className="justify-between mt-10 flex">
             <input
               type="text"
               placeholder="abc@gmail.com"
@@ -58,9 +61,9 @@ const Hero = () => {
           <div className="flex justify-center mx-auto mt-20">
             <p className="text-lg mt-5 mr-5">Available on App Store only</p>
             <img src={AppStore} className="w-1/4" alt="appstore" />
-          </div>
+          </div> */}
         </div>
-        <div className="w-1/2 hero-image flex items-center justify-center">
+        <div className="w-1/2 hero-image flex items-center justify-center mt-0 pt-0">
           <img src={HeroImage} alt="hero" />
         </div>
       </div>

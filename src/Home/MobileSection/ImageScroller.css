@@ -68,6 +68,7 @@
     .containermain2{
         display: block;
         align-items: center;
+        margin-top: 0px;
     }
     .container1 {
         display: flex;

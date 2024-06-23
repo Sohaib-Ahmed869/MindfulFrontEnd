@@ -6,6 +6,8 @@ import MobileSection from "./Home/MobileSection/page";
 import WhoWeAre from "./Home/WhoWeAre/WhoWeAre";
 import Footer from "./Components/footer";
 import ImageScroller2 from "./Home/MobileSectionMobileView/page";
+import Intro from "./Intro/intro";
+import HowItWorks from "./howItWorks/page";
 
 function App() {
   return (
@@ -16,6 +18,12 @@ function App() {
       </div>
       <div id="who-we-are">
         <WhoWeAre />
+      </div>
+      <div id="intro">
+        <Intro />
+      </div>
+      <div id="how-it-works">
+        <HowItWorks />
       </div>
       <div id="mobile-section" className="laptopsection">
         <MobileSection />

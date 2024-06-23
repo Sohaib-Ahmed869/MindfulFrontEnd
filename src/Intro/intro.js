@@ -1,20 +1,32 @@
 import React from "react";
+import phone from "../Assets/phone.png";
 import { BiPlay } from "react-icons/bi";
-import arrow2 from "../../Assets/arrow2.png";
-import "./WhoWeAre.css";
-const WhoWeAre = () => {
+import './intro.css'
+const Intro = () => {
   return (
-    <div className="hero2 w-full p-20 mb-20">
-      <div className="flex justify-between items-center herocontainer">
-        <div className="hero-text w-2/5 text-left p-5 pt-0">
+    <div className="hero w-full p-10 pt-0 cont">
+      <div className="flex items-center herocontainer">
+        <div className="w-1/3 hero-image flex items-center justify-center mt-0 pt-0">
+          <img src={phone} alt="hero" className="mob"/>
+        </div>
+        <div className="hero-text w-2/4 text-left p-5 pt-0">
           <h1 className="hero-heading text-6xl font-bold leading-none">
-            We feel you
+            Introducing !
           </h1>
-          <p className="text-2xl hero-subheading mt-2">
-            We know mastering mindfulness requires active learning and immediate
-            feedback.
+          <h1
+            className="hero-heading text-6xl font-bold leading-none mt-3"
+            style={{ color: "#A7C18E" }}
+          >
+            {" "}
+            Meta Mindful
+          </h1>
+          <p className="text-2xl hero-subheading mt-10">
+            Our AI chatbot transforms mindfulness into a tangible skill.
+            Developed by mindfulness coaches, AI professionals, and
+            psychologists, MetaMindful creates an effective personalized
+            learning experience.
           </p>
-          <img src={arrow2} alt="arrow" className="absolute arrow" style={{left:"40%"}}/>
+          
           {/* <div className="justify-between mt-10 flex">
             <input
               type="text"
@@ -41,4 +53,4 @@ const WhoWeAre = () => {
   );
 };
 
-export default WhoWeAre;
+export default Intro;
