@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiPlay } from "react-icons/bi";
 import { FaCircle } from "react-icons/fa";
 import arrow3 from "../Assets/arrow3.png";
-import './page.css'
+import useIntersectionObserver from "../useInteractionObserver";
+import "./page.css";
 const steps = [
   {
     title: "Step 1",
@@ -18,16 +19,26 @@ const steps = [
   },
 ];
 const HowItWorks = () => {
+  const [ref, isIntersecting, hasIntersected] = useIntersectionObserver({
+    threshold: 0.0,
+  });
+
+  const [doneOnce, setDoneOnce] = useState(false);
   return (
-    <div className="w-full p-10 pt-0 flex mainpart">
+    <div
+      ref={ref}
+      className={`w-full p-10 pt-0 flex mainpart ${
+        hasIntersected ? "slide-in-right" : ""
+      }`}
+    >
       <div className="w-1/2 div1">
         <p></p>
         <img
-            src={arrow3}
-            alt="arrow"
-            className="absolute mt-36 arrow"
-            style={{ left: "30%" }}
-          />
+          src={arrow3}
+          alt="arrow"
+          className="absolute mt-36 arrow"
+          style={{ left: "30%" }}
+        />
       </div>
       <div className="flex items-center div2">
         <div className="text-left p-5 pt-0">

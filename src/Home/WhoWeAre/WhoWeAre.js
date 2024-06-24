@@ -1,20 +1,41 @@
 import React from "react";
 import { BiPlay } from "react-icons/bi";
 import arrow2 from "../../Assets/arrow2.png";
+import useIntersectionObserver from "../../useInteractionObserver";
 import "./WhoWeAre.css";
 const WhoWeAre = () => {
+  const [ref, isIntersecting, hasIntersected] = useIntersectionObserver({
+    threshold: 0.0,
+  });
+
   return (
     <div className="hero2 w-full p-20 mb-20">
       <div className="flex justify-between items-center herocontainer">
-        <div className="hero-text w-2/5 text-left p-5 pt-0">
-          <h1 className="hero-heading text-6xl font-bold leading-none">
-            We feel you
-          </h1>
-          <p className="text-2xl hero-subheading mt-2">
-            We know mastering mindfulness requires active learning and immediate
-            feedback.
-          </p>
-          <img src={arrow2} alt="arrow" className="absolute arrow" style={{left:"40%"}}/>
+        <div className={`hero-text w-2/5 text-left p-5 pt-0`}>
+          <div
+            ref={ref}
+            className={` ${
+              hasIntersected ? "slide-in-left" : ""
+            }`}
+          >
+            {" "}
+            <h1 className="hero-heading text-6xl font-bold leading-none">
+              We feel you
+            </h1>
+            <p className="text-2xl hero-subheading mt-2">
+              We know mastering mindfulness requires active learning and
+              immediate feedback.
+            </p>
+          </div>
+
+          <img
+            src={arrow2}
+            alt="arrow"
+            className={`absolute arrow ${
+              hasIntersected ? "rotate" : ""
+            }`}
+            style={{ left: "40%" }}
+          />
           {/* <div className="justify-between mt-10 flex">
             <input
               type="text"

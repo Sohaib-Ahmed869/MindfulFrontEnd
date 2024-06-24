@@ -1,15 +1,21 @@
 import React from "react";
 import phone from "../Assets/phone.png";
 import { BiPlay } from "react-icons/bi";
+import useIntersectionObserver from "../useInteractionObserver";
 import './intro.css'
 const Intro = () => {
+  const [ref, isIntersecting, hasIntersected] = useIntersectionObserver({
+    threshold: 0.0,
+  });
   return (
     <div className="hero w-full p-10 pt-0 cont">
       <div className="flex items-center herocontainer">
-        <div className="w-1/3 hero-image flex items-center justify-center mt-0 pt-0">
+        <div
+          ref={ref}
+         className={`w-1/3 hero-image flex items-center justify-center mt-0 pt-0 ${hasIntersected ? "slide-in-left" : ""}`}>
           <img src={phone} alt="hero" className="mob"/>
         </div>
-        <div className="hero-text w-2/4 text-left p-5 pt-0">
+        <div className={`hero-text w-2/4 text-left p-5 pt-0 ${hasIntersected ? "slide-in-right" : ""}`}>
           <h1 className="hero-heading text-6xl font-bold leading-none">
             Introducing !
           </h1>

@@ -9,6 +9,7 @@ import OtherImage from "../../Assets/Progress.png";
 import LessonImage from "../../Assets/Lesson.png";
 import mobiles from "../../Assets/mobiles.png";
 import "./ImageScroller.css";
+import useIntersectionObserver from "../../useInteractionObserver";
 
 // Install necessary Swiper modules
 SwiperCore.use([Mousewheel, Pagination]);
@@ -45,6 +46,10 @@ const settings = {
 };
 
 const ImageScroller = () => {
+  const [ref, isIntersecting, hasIntersected] = useIntersectionObserver({
+    threshold: 0.0,
+  });
+
   const [activeImage, setActiveImage] = useState(data[0].image); // Initial image set to the first item
   const [imageKey, setImageKey] = useState(0); // Key to force re-render
 
@@ -74,7 +79,7 @@ const ImageScroller = () => {
     //     ))}
     //   </Swiper>
     // </div>
-    <div className="p-52 pt-0 pb-10 mt-36">
+    <div className={`p-52 pt-0 pb-10 mt-36 ${hasIntersected ? "fade-in" : ""}`} ref={ref}>
       <img src={mobiles} alt="mobiles" className="w-full" />
     </div>
   );
