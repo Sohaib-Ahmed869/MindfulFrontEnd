@@ -37,7 +37,7 @@ const data = [
 
 const ImageScroller2 = () => {
   return (
-    <div className="">
+    <div className="containermain2">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
         spaceBetween={0}
