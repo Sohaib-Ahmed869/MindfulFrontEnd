@@ -38,7 +38,7 @@ const Hero = () => {
                Are you struggling with mindfulness?
             
           </h1>
-          <img src={arrow1} alt="arrow" className="absolute mt-36 arrow rotate" style={{left:"40%"}}/>
+          <img src={arrow1} alt="arrow" className="absolute mt-36 arrow slide-in-top" style={{left:"40%"}}/>
           <p className="text-2xl hero-subheading mt-10  slide-in-left">
           You understand the power of mindfulness, but constantly struggling to understand and incorporate it into your life with traditional approaches.
           </p>

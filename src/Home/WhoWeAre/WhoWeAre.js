@@ -32,7 +32,7 @@ const WhoWeAre = () => {
             src={arrow2}
             alt="arrow"
             className={`absolute arrow ${
-              hasIntersected ? "rotate" : ""
+              hasIntersected ? "slide-in-top" : ""
             }`}
             style={{ left: "40%" }}
           />

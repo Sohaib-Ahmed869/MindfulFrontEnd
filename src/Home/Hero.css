@@ -61,9 +61,23 @@
       opacity: 1;
     }
   }
+
   
   .fade-in {
     animation: fadeIn 2s ease-in;
+  }
+
+  @keyframes slideInFromTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .slide-in-top {
+    animation: slideInFromTop 1s ease-out;
   }
 
   
