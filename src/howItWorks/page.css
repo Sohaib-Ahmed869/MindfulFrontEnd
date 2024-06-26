@@ -6,11 +6,21 @@
     font-family: 'Urbanist Light';
 } 
 
-@media screen and (max-width: 768px){
-    .arrow{
-        display: none;
-    }
 
+.arrow3{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+   
+  .arrow3{
+    display: block;
+    height: 150px;
+    position: relative;
+    margin-top: -90px;
+
+    margin-bottom: 10px;
+  }
     .div1{
         display: none;
     }
@@ -20,6 +30,7 @@
         padding: 0px;   
     }
 }
+
 
 @keyframes fadeIn {
     from {

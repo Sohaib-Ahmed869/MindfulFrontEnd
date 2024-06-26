@@ -13,7 +13,16 @@
     font-weight: 700;
 }
 
+.arrow2 {
+    display: none;
+}
+
 @media screen and (max-width: 768px){
+  .arrow2{
+    display: block;
+    height: 150px;
+
+    }
     .hero-heading{
         font-size: 2rem;
     }

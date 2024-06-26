@@ -1,6 +1,7 @@
 import React from "react";
 import { BiPlay } from "react-icons/bi";
 import arrow2 from "../../Assets/arrow2.png";
+import arrow3 from "../../Assets/arrow3.png";
 import useIntersectionObserver from "../../useInteractionObserver";
 import "./WhoWeAre.css";
 const WhoWeAre = () => {
@@ -10,13 +11,11 @@ const WhoWeAre = () => {
 
   return (
     <div className="hero2 w-full p-20 mb-20">
-      <div className="flex justify-between items-center herocontainer">
-        <div className={`hero-text w-2/5 text-left p-5 pt-0`}>
+      <div className="flex justify-between items-center herocontainer2">
+        <div className={`hero-text w-2/5 text-left p-5 pt-0 mt-10`}>
           <div
             ref={ref}
-            className={` ${
-              hasIntersected ? "slide-in-left" : ""
-            }`}
+            className={` ${hasIntersected ? "slide-in-left" : ""}`}
           >
             {" "}
             <h1 className="hero-heading text-6xl font-bold leading-none">
@@ -31,10 +30,16 @@ const WhoWeAre = () => {
           <img
             src={arrow2}
             alt="arrow"
-            className={`absolute arrow ${
+            className={`absolute arrow ${hasIntersected ? "slide-in-top" : ""}`}
+            style={{ left: "40%" }}
+          />
+          <img
+            src={arrow3}
+            alt="arrow"
+            className={`absolute arrow4 ${
               hasIntersected ? "slide-in-top" : ""
             }`}
-            style={{ left: "40%" }}
+            style={{ left: "10%", rotate: "340deg" }}
           />
           {/* <div className="justify-between mt-10 flex">
             <input

@@ -13,12 +13,21 @@
 
 }
 
+.arrow4 {
+  display: none;
+
+}
+
 @media screen and (max-width: 768px){
 
+  .hero-text{
+    text-align: right;
+  }
 
     .whoweare{
         width: 100%;
         margin: 0;
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,20 +76,26 @@
         margin-top: 10px;
         
     }
-    .arrow{
-        display: none;
-    }
+
 
     .hero2 {
         padding: 0 0px;
         margin-bottom: 100px;
     }
-    .herocontainer{
+    .herocontainer2{
         padding: 0px;
         flex-direction: column;
+        margin-top: 140px;
     }
-
+   
+    .arrow4{
+      display: block;
+      height: 150px;
+  
+      }
 }
+ 
+
 
 @media screen and (min-width: 2300px){
     .card h2{

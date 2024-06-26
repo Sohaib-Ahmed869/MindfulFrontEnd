@@ -33,14 +33,19 @@ const Hero = () => {
       <div className="flex justify-between items-center herocontainer ">
         <div className="hero-text w-1/2 text-left p-5 pt-0">
           <h1 className="hero-heading text-6xl font-bold leading-none  slide-in-left">
-             <span style={{ color: "#A7C18E" }}> Hey there !</span> 
-           {" "}
-               Are you struggling with mindfulness?
-            
+            <span style={{ color: "#A7C18E" }}> Hey there !</span> Are you
+            struggling with mindfulness?
           </h1>
-          <img src={arrow1} alt="arrow" className="absolute mt-36 arrow slide-in-top" style={{left:"40%"}}/>
+          <img
+            src={arrow1}
+            alt="arrow"
+            className="absolute mt-36 arrow slide-in-top"
+            style={{ left: "40%" }}
+          />
           <p className="text-2xl hero-subheading mt-10  slide-in-left">
-          You understand the power of mindfulness, but constantly struggling to understand and incorporate it into your life with traditional approaches.
+            You understand the power of mindfulness, but constantly struggling
+            to understand and incorporate it into your life with traditional
+            approaches.
           </p>
           {/* <div className="justify-between mt-10 flex">
             <input
@@ -65,6 +70,13 @@ const Hero = () => {
         </div>
         <div className="w-1/2 hero-image flex items-center justify-center mt-0 pt-0 slide-in-right">
           <img src={HeroImage} alt="hero" />
+        </div>
+        <div className="mt-0">
+          <img
+            src={arrow1}
+            className="absolute mt-0 arrow2 slide-in-top mr-0 ml-28"
+            style={{ left: "40%" }}
+          />
         </div>
       </div>
     </div>

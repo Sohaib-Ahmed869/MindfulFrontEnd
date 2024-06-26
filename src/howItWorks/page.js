@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BiPlay } from "react-icons/bi";
 import { FaCircle } from "react-icons/fa";
 import arrow3 from "../Assets/arrow3.png";
+import arrow1 from "../Assets/arrow1.png";
 import useIntersectionObserver from "../useInteractionObserver";
 import "./page.css";
 const steps = [
@@ -31,6 +32,12 @@ const HowItWorks = () => {
         alt="arrow"
         className= {`absolute mt-36 arrow ${hasIntersected ? "slide-in-top" : ""}`} 
         style={{ left: "30%" }}
+      />
+      <img
+        src={arrow1}
+        alt="arrow"
+        className= {`absolute arrow3 ${hasIntersected ? "slide-in-top" : ""}`} 
+        style={{ left: "70%", rotate: "340deg" }}
       />
 
       <div
