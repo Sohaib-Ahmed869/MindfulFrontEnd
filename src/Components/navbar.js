@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar flex justify-between items-center h-36">
-      <img src={Logo} alt="Mindful Logo" className="w-28 h-24 ml-3 icontop" />
+      <img src={Logo} alt="Mindful Logo" className="w-28 h-28 ml-3 icontop" />
       <div className="menu-icon md:hidden" onClick={toggleMenu}>
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
