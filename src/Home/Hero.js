@@ -39,8 +39,8 @@ const Hero = () => {
           <img
             src={arrow1}
             alt="arrow"
-            className="absolute mt-36 arrow slide-in-top"
-            style={{ left: "40%" }}
+            className="absolute mt-10 arrow slide-in-top"
+            style={{ left: "80%" }}
           />
           <p className="text-2xl hero-subheading mt-10  slide-in-left">
             You understand the power of mindfulness, but constantly struggling

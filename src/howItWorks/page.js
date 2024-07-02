@@ -30,13 +30,15 @@ const HowItWorks = () => {
       <img
         src={arrow3}
         alt="arrow"
-        className= {`absolute mt-36 arrow ${hasIntersected ? "slide-in-top" : ""}`} 
+        className={`absolute mt-36 arrow ${
+          hasIntersected ? "slide-in-top" : ""
+        }`}
         style={{ left: "30%" }}
       />
       <img
         src={arrow1}
         alt="arrow"
-        className= {`absolute arrow3 ${hasIntersected ? "slide-in-top" : ""}`} 
+        className={`absolute arrow3 ${hasIntersected ? "slide-in-top" : ""}`}
         style={{ left: "70%", rotate: "340deg" }}
       />
 

@@ -79,7 +79,7 @@ const ImageScroller = () => {
     //     ))}
     //   </Swiper>
     // </div>
-    <div className={`p-52 pt-0 pb-10 mt-36 ${hasIntersected ? "fade-in" : ""}`} ref={ref}>
+    <div className={`p-52 pt-0 pb-10  ${hasIntersected ? "fade-in" : ""}`} ref={ref}>
       <img src={mobiles} alt="mobiles" className="w-full" />
     </div>
   );
